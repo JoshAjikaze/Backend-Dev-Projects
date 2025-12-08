@@ -21,19 +21,19 @@ movieRoute.get('/:id', (req, res) => {
 
 movieRoute.post('/', (req, res) => {
     const { id, title, duration, noOfLikes } = req.body;
-    
+
     // Validate required fields
     if (!id || !title || !duration || noOfLikes === undefined) {
         return res.status(400).json({ error: 'Missing required fields: id, title, duration, noOfLikes' });
     }
-    
+
     // Check if movie with same id already exists
     if (movies.some((movie) => movie.id === id)) {
         return res.status(409).json({ error: 'Movie with this id already exists' });
     }
-    
+
     movies.push(req.body);
-    res.status(201).json({ message: 'Movie added', movies: movies });
+    res.status(201).json({ message: 'Movie added', movies: movies })
 });
 
 movieRoute.put('/', (req, res) => {
