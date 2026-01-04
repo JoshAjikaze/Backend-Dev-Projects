@@ -1,0 +1,4 @@
+name: FastAPI
+scripts:
+  server: uvicorn main:app --reload
+  cvenv: deactivate

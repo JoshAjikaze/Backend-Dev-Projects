@@ -1,0 +1,18 @@
+[project]
+name = "djangocourse"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Ajiwojuolorun Joshua",email = "ajiwojuolorunjoshua@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+[tool.poetry.dependencies]
+django = "^5.0.1"
+
+[tool.poetry]
+packages = [{include = "djangocourse", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
