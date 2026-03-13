@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1f1fce45-7970-4b3c-ab35-89954992eccb",
+    "title": "Issue 2",
+    "description": "Server has crashed",
+    "priority": "high",
+    "status": "open"
+  },
+  {
+    "id": "01243f80-d526-4b9f-8885-6bd3b4b5d51b",
+    "title": "Issue 3",
+    "description": "Getting Unneccesary emails",
+    "priority": "medium",
+    "status": "open"
+  }
+]
